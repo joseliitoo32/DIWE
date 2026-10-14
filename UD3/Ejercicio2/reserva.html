@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Mesa | Restaurante La Buena Brasa</title>
+    <style>
+        :root {
+            --primary: #8B0000;
+            --accent: #D4AF37;
+            --bg-dark: #1A1A1A;
+            --bg-light: #F9F6F0;
+            --text-dark: #2B2B2B;
+            --text-light: #F5F5F5;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: var(--bg-light); color: var(--text-dark); }
+
+        header {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo { font-size: 1.8rem; font-weight: bold; color: var(--accent); text-decoration: none; }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: var(--text-light); text-decoration: none; }
+        nav a:hover, nav a.active { color: var(--accent); }
+
+        .form-container {
+            max-width: 600px;
+            margin: 3rem auto;
+            background: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 { color: var(--primary); text-align: center; margin-bottom: 1.5rem; }
+
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.4rem;
+            font-weight: 600;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .btn-submit {
+            width: 100%;
+            background-color: var(--primary);
+            color: white;
+            padding: 1rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .btn-submit:hover {
+            background-color: #5C0000;
+        }
+
+        footer {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+        footer a { color: var(--accent); text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">La Buena Brasa</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="carta.html">Carta</a></li>
+                <li><a href="reserva.html" class="active">Reservas</a></li>
+                <li><a href="sitemap.html">Mapa Web</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="form-container">
+        <h1>Reserva tu Mesa</h1>
+        <form action="#" method="post" onsubmit="alert('¡Reserva recibida! Nos pondremos en contacto contigo.'); return false;">
+            <div class="form-group">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" required placeholder="juan@ejemplo.com">
+            </div>
+
+            <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" required placeholder="600 000 000">
+            </div>
+
+            <div class="form-group">
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+
+            <div class="form-group">
+                <label for="comensales">Número de Personas</label>
+                <select id="comensales" name="comensales">
+                    <option value="2">2 personas</option>
+                    <option value="4">4 personas</option>
+                    <option value="6">6 personas</option>
+                    <option value="8">Más de 6 personas</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="notas">Peticiones Especiales</label>
+                <textarea id="notas" name="notas" rows="4" placeholder="Alergias, trona para bebé, preferencia de mesa..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Confirmar Reserva</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Restaurante La Buena Brasa - Ubrique</p>
+        <p><small><a href="sitemap.html">Mapa del Sitio</a></small></p>
+    </footer>
+
+</body>
+</html>

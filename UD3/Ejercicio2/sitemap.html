@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa del Sitio | Restaurante La Buena Brasa</title>
+    <style>
+        :root {
+            --primary: #8B0000;
+            --accent: #D4AF37;
+            --bg-dark: #1A1A1A;
+            --bg-light: #F9F6F0;
+            --text-dark: #2B2B2B;
+            --text-light: #F5F5F5;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: var(--bg-light); color: var(--text-dark); }
+
+        header {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo { font-size: 1.8rem; font-weight: bold; color: var(--accent); text-decoration: none; }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: var(--text-light); text-decoration: none; }
+        nav a:hover, nav a.active { color: var(--accent); }
+
+        .container {
+            max-width: 800px;
+            margin: 3rem auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 { color: var(--primary); text-align: center; margin-bottom: 2rem; }
+
+        .sitemap-list {
+            list-style: none;
+            padding-left: 1rem;
+        }
+
+        .sitemap-list > li {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .sitemap-list ul {
+            list-style: circle;
+            margin-left: 2rem;
+            margin-top: 0.5rem;
+            font-weight: normal;
+            font-size: 1rem;
+        }
+
+        .sitemap-list a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .sitemap-list a:hover {
+            color: var(--accent);
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+        footer a { color: var(--accent); text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">La Buena Brasa</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="carta.html">Carta</a></li>
+                <li><a href="reserva.html">Reservas</a></li>
+                <li><a href="sitemap.html" class="active">Mapa Web</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Mapa del Sitio Web</h1>
+        <ul class="sitemap-list">
+            <li>
+                <a href="index.html">Página Principal (Inicio)</a>
+                <ul>
+                    <li>Especialidades destacadas</li>
+                    <li>Entorno e información general</li>
+                </ul>
+            </li>
+            <li>
+                <a href="carta.html">Nuestra Carta</a>
+                <ul>
+                    <li>Para Empezar (Entrantes y Quesos Payoyos)</li>
+                    <li>Especialidades a la Brasa (Carnes selectas y Retinto)</li>
+                    <li>Postres Caseros</li>
+                </ul>
+            </li>
+            <li>
+                <a href="reserva.html">Reserva de Mesa</a>
+                <ul>
+                    <li>Formulario de reservas en línea</li>
+                </ul>
+            </li>
+            <li>
+                <a href="sitemap.xml">Sitemap en formato XML (para buscadores)</a>
+            </li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Restaurante La Buena Brasa - Ubrique</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Carta | Restaurante La Buena Brasa</title>
+    <style>
+        :root {
+            --primary: #8B0000;
+            --accent: #D4AF37;
+            --bg-dark: #1A1A1A;
+            --bg-light: #F9F6F0;
+            --text-dark: #2B2B2B;
+            --text-light: #F5F5F5;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: var(--bg-light); color: var(--text-dark); }
+
+        header {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo { font-size: 1.8rem; font-weight: bold; color: var(--accent); text-decoration: none; }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: var(--text-light); text-decoration: none; }
+        nav a:hover, nav a.active { color: var(--accent); }
+
+        .container {
+            max-width: 1000px;
+            margin: 3rem auto;
+            padding: 0 1.5rem;
+        }
+
+        h1 { text-align: center; color: var(--primary); margin-bottom: 2rem; font-size: 2.5rem; }
+
+        .category-title {
+            color: var(--primary);
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.5rem;
+            margin: 2rem 0 1.5rem 0;
+            font-size: 1.8rem;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .menu-item {
+            background: white;
+            padding: 1.2rem;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .item-details h3 { font-size: 1.2rem; color: #111; }
+        .item-details p { font-size: 0.9rem; color: #666; margin-top: 0.2rem; }
+        .price { font-size: 1.2rem; font-weight: bold; color: var(--primary); }
+
+        footer {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+        footer a { color: var(--accent); text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">La Buena Brasa</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="carta.html" class="active">Carta</a></li>
+                <li><a href="reserva.html">Reservas</a></li>
+                <li><a href="sitemap.html">Mapa Web</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Nuestra Carta</h1>
+
+        <h2 class="category-title">Para Empezar</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <div class="item-details">
+                    <h3>Tabla de Quesos Payoyos de Ubrique</h3>
+                    <p>Variedad de quesos de la Sierra de Grazalema con mermelada artesanal.</p>
+                </div>
+                <span class="price">16.50 €</span>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <h3>Jamón Ibérico de Bellota</h3>
+                    <p>Cortado a mano acompañado de pan con tomate.</p>
+                </div>
+                <span class="price">22.00 €</span>
+            </div>
+        </div>
+
+        <h2 class="category-title">Especialidades a la Brasa</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <div class="item-details">
+                    <h3>Chuletón de Retinto (1 kg)</h3>
+                    <p>Carne autóctona de Cádiz con 30 días de maduración.</p>
+                </div>
+                <span class="price">52.00 €</span>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <h3>Secreto Ibérico a la Parrilla</h3>
+                    <p>Acompañado de patatas a lo pobre y pimientos del padrón.</p>
+                </div>
+                <span class="price">18.00 €</span>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <h3>Presa Ibérica marinada</h3>
+                    <p>Con verduras de temporada asadas al carbón.</p>
+                </div>
+                <span class="price">19.50 €</span>
+            </div>
+        </div>
+
+        <h2 class="category-title">Postres Caseros</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <div class="item-details">
+                    <h3>Tarta de Queso con Miel Local</h3>
+                    <p>Receta tradicional horneada a la brasa.</p>
+                </div>
+                <span class="price">6.00 €</span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Restaurante La Buena Brasa - Ubrique</p>
+        <p><small><a href="sitemap.html">Mapa del Sitio</a></small></p>
+    </footer>
+
+</body>
+</html>
