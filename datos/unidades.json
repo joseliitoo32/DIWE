@@ -1,0 +1,20 @@
+[
+  {
+    "id": "UT01",
+    "titulo": "Unidad 1",
+    "descripcion": "Reemplaza este ejemplo por el nombre real de la unidad.",
+    "materiales": []
+  },
+  {
+    "id": "UT02",
+    "titulo": "Unidad 2",
+    "descripcion": "Reemplaza este ejemplo por el nombre real de la unidad.",
+    "materiales": []
+  },
+  {
+    "id": "UT03",
+    "titulo": "Unidad 3",
+    "descripcion": "Reemplaza este ejemplo por el nombre real de la unidad.",
+    "materiales": []
+  }
+]

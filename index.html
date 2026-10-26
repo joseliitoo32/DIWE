@@ -1,11 +1,33 @@
-!DOCTYPE HTML
+<!doctype html>
+<html lang="es">
 <head>
-  <title> DIWE </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio de DIWEB de segundo de DAW">
+  <title>Portfolio DIWEB · 2.º DAW</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/app.js" defer></script>
 </head>
-
 <body>
-  <h1> DIWE </h1>
-
-<p> Bienvenido a mi porfolio de DIWE </p>
-  
+  <header class="topbar">
+    <a class="brand" href="index.html"><span class="brand-icon">&lt;/&gt;</span> DIWEB<span class="accent">.</span></a>
+    <nav><a href="index.html" aria-current="page">Inicio</a><a href="#unidades">Unidades</a><a href="admin.html">Administrar</a></nav>
+  </header>
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">SEGUNDO DE DESARROLLO DE APLICACIONES WEB</p>
+      <h1>Mi portfolio de <span class="accent">DIWEB</span></h1>
+      <p class="lead">Teoría, actividades y proyectos organizados por unidades didácticas.</p>
+      <a class="button" href="#unidades">Explorar unidades ↓</a>
+      <div class="hero-orb" aria-hidden="true">&lt;/&gt;</div>
+    </section>
+    <section id="unidades">
+      <div class="section-heading"><div><p class="eyebrow">MI APRENDIZAJE</p><h2>Unidades didácticas</h2></div><p id="summary" class="muted">Cargando…</p></div>
+      <div id="units" class="unit-grid"></div>
+      <p id="message" class="notice" hidden></p>
+    </section>
+    <section class="about"><p class="eyebrow">PORTFOLIO ACADÉMICO</p><h2>Aprender, practicar y documentar</h2><p>En cada unidad encontrarás los materiales de teoría, las actividades realizadas y los proyectos relacionados. Los contenidos de ejemplo se pueden reemplazar desde el panel de administración.</p><a class="text-link" href="admin.html">Gestionar contenidos →</a></section>
+  </main>
+  <footer>Portfolio académico · DIWEB · 2.º DAW</footer>
 </body>
+</html>
